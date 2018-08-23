@@ -1,0 +1,631 @@
+/*
+ Theme Name:     Construction Theme
+ Description:	 A Construction Project Pack for members of the Superflyer Club
+ Author:         Superfly
+ Author URI:     https://besuperfly.com
+ Template:       Divi
+ Version:        1.0
+*/
+
+/* ----------- CHILD THEME CUSTOM CSS - EDIT AT YOUR OWN RISK --------------------------- */
+
+
+@font-face {
+  font-family: 'Georgia';
+  src: url('fonts/Georgia.eot?#iefix') format('embedded-opentype'),  
+  url('fonts/Georgia.woff') format('woff'), 
+  url('fonts/Georgia.ttf')  format('truetype'), 
+  url('fonts/Georgia.svg#Georgia') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,h1,h2,h3,h4,h5,h6, #main-header, #et-top-navigation{
+	font-family: 'Georgia'!important;
+}
+
+
+/* GENERAL */
+.whiteLines p:before {
+	content: "";
+	display: inline-block;
+	width: 116px;
+	height: 4px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	margin-right: 25px;
+  margin-bottom: 4px;
+}
+.whiteLines p:after {
+	content: "";
+	display: inline-block;
+	width: 116px;
+	height: 4px;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	margin-left: 25px;
+  margin-bottom: 4px;
+}
+.brownLines p:before {
+	content: "";
+	display: inline-block;
+	width: 116px;
+	height: 4px;
+	border-top: 2px solid #98694d;
+	border-bottom: 2px solid #98694d;
+	margin-right: 25px;
+  margin-bottom: 4px;
+}
+.brownLines p:after {
+	content: "";
+	display: inline-block;
+	width: 116px;
+	height: 4px;
+	border-top: 2px solid #98694d;
+	border-bottom: 2px solid #98694d;
+	margin-left: 25px;
+  margin-bottom: 4px;
+}
+h1, h2, h3 {
+	font-weight: 100 !important;
+	letter-spacing: 3px;
+}
+h4, h5, h6 {
+	color: #9fa0a7 !important;
+	font-weight: 700;
+	letter-spacing: 6px;
+}
+a {
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	-ms-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+a:hover {
+	color: #000;
+}
+blockquote {
+	padding-left: 0;
+	border-left: none;
+}
+blockquote p {
+	font-family: 'Oswald';
+	font-size: 36px;
+	font-weight: 100;
+	color: #98694d;
+	line-height: 1.2em;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+blockquote cite {
+	font-style: normal;
+	font-size: 18px;
+	font-weight: 500;
+}
+blockquote cite a {
+	color: #de892e;
+}
+.et_pb_text ul, .et_pb_text ol {
+	margin-left: 30px;
+}
+.et_pb_text li {
+	margin-bottom: 15px;
+}
+.greyOverlay .et_parallax_bg:before, .greyOverlay:before {
+  content:"";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(58, 60, 69, .5);
+  z-index: 9998;
+}
+.greyOverlay .et_pb_module {
+	z-index: 9999 !important;
+	position: relative;
+}
+.brownOverlay .et_parallax_bg:before, .brownOverlay:before {
+  content:"";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(152, 105, 77, .7);
+  z-index: 9998;
+}
+.brownOverlay .et_pb_module {
+	z-index: 9999 !important;
+	position: relative;
+}
+@media screen and (max-width : 980px) {
+	.et_pb_section {
+		padding: 30px 0;
+	}
+	.halfSection .et_pb_column.et_pb_column_empty {
+		display: inherit;
+		min-height: 500px;
+	}
+  .whiteLines p, .brownLines p {
+    line-height: 1.4em;
+  }
+	.whiteLines p:before, .whiteLines p:after, .brownLines p:before, .brownLines p:after {
+		border-top: none;
+		border-bottom: none;
+		margin: 0;
+		width: 0;
+		height: 0;
+	}
+}
+@media screen and (max-width : 980px) {
+	blockquote p {
+		font-size: 24px;
+	}
+}
+
+
+
+/* BUTTONS */
+.et_button_no_icon .et_pb_button, .et_button_no_icon .et_pb_button:hover, .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, .et_button_no_icon.et_button_left .et_pb_button:hover, .et_button_no_icon.woocommerce a.button.alt, .et_button_no_icon.woocommerce-page a.button.alt, .et_button_no_icon.woocommerce button.button.alt, .et_button_no_icon.woocommerce-page button.button.alt, .et_button_no_icon.woocommerce input.button.alt, .et_button_no_icon.woocommerce-page input.button.alt, .et_button_no_icon.woocommerce #respond input#submit.alt, .et_button_no_icon.woocommerce-page #respond input#submit.alt, .et_button_no_icon.woocommerce #content input.button.alt, .et_button_no_icon.woocommerce-page #content input.button.alt, .et_button_no_icon.woocommerce a.button, .et_button_no_icon.woocommerce-page a.button, .et_button_no_icon.woocommerce button.button, .et_button_no_icon.woocommerce-page button.button, .et_button_no_icon.woocommerce input.button, .et_button_no_icon.woocommerce-page input.button, .et_button_no_icon.woocommerce #respond input#submit, .et_button_no_icon.woocommerce-page #respond input#submit, .et_button_no_icon.woocommerce #content input.button, .et_button_no_icon.woocommerce-page #content input.button, .et_button_no_icon.woocommerce a.button.alt:hover, .et_button_no_icon.woocommerce-page a.button.alt:hover, .et_button_no_icon.woocommerce button.button.alt:hover, .et_button_no_icon.woocommerce-page button.button.alt:hover, .et_button_no_icon.woocommerce input.button.alt:hover, .et_button_no_icon.woocommerce-page input.button.alt:hover, .et_button_no_icon.woocommerce #respond input#submit.alt:hover, .et_button_no_icon.woocommerce-page #respond input#submit.alt:hover, .et_button_no_icon.woocommerce #content input.button.alt:hover, .et_button_no_icon.woocommerce-page #content input.button.alt:hover, .et_button_no_icon.woocommerce a.button:hover, .et_button_no_icon.woocommerce-page a.button:hover, .et_button_no_icon.woocommerce button.button:hover, .et_button_no_icon.woocommerce-page button.button:hover, .et_button_no_icon.woocommerce input.button:hover, .et_button_no_icon.woocommerce-page input.button:hover, .et_button_no_icon.woocommerce #respond input#submit:hover, .et_button_no_icon.woocommerce-page #respond input#submit:hover, .et_button_no_icon.woocommerce #content input.button:hover, .et_button_no_icon.woocommerce-page #content input.button:hover, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce a.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page a.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce button.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page button.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #respond input#submit.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #respond input#submit.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #content input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #content input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce a.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page a.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce button.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page button.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #respond input#submit, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #respond input#submit, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #content input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #content input.button, .et_button_no_icon.et_button_left.woocommerce a.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page a.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce button.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page button.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce #respond input#submit.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page #respond input#submit.alt:hover, .et_button_no_icon.et_button_left.woocommerce #content input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page #content input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce a.button:hover, .et_button_no_icon.et_button_left.woocommerce-page a.button:hover, .et_button_no_icon.et_button_left.woocommerce button.button:hover, .et_button_no_icon.et_button_left.woocommerce-page button.button:hover, .et_button_no_icon.et_button_left.woocommerce input.button:hover, .et_button_no_icon.et_button_left.woocommerce-page input.button:hover, .et_button_no_icon.et_button_left.woocommerce #respond input#submit:hover, .et_button_no_icon.et_button_left.woocommerce-page #respond input#submit:hover, .et_button_no_icon.et_button_left.woocommerce #content input.button:hover, .et_button_no_icon.et_button_left.woocommerce-page #content input.button:hover, .woocommerce input.button, .woocommerce input.button:hover {
+	font-weight: 100 !important;
+	padding: 10px 50px !important;
+}
+@media screen and (max-width : 980px) {
+	.et_button_no_icon .et_pb_button, .et_button_no_icon .et_pb_button:hover, .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, .et_button_no_icon.et_button_left .et_pb_button:hover, .et_button_no_icon.woocommerce a.button.alt, .et_button_no_icon.woocommerce-page a.button.alt, .et_button_no_icon.woocommerce button.button.alt, .et_button_no_icon.woocommerce-page button.button.alt, .et_button_no_icon.woocommerce input.button.alt, .et_button_no_icon.woocommerce-page input.button.alt, .et_button_no_icon.woocommerce #respond input#submit.alt, .et_button_no_icon.woocommerce-page #respond input#submit.alt, .et_button_no_icon.woocommerce #content input.button.alt, .et_button_no_icon.woocommerce-page #content input.button.alt, .et_button_no_icon.woocommerce a.button, .et_button_no_icon.woocommerce-page a.button, .et_button_no_icon.woocommerce button.button, .et_button_no_icon.woocommerce-page button.button, .et_button_no_icon.woocommerce input.button, .et_button_no_icon.woocommerce-page input.button, .et_button_no_icon.woocommerce #respond input#submit, .et_button_no_icon.woocommerce-page #respond input#submit, .et_button_no_icon.woocommerce #content input.button, .et_button_no_icon.woocommerce-page #content input.button, .et_button_no_icon.woocommerce a.button.alt:hover, .et_button_no_icon.woocommerce-page a.button.alt:hover, .et_button_no_icon.woocommerce button.button.alt:hover, .et_button_no_icon.woocommerce-page button.button.alt:hover, .et_button_no_icon.woocommerce input.button.alt:hover, .et_button_no_icon.woocommerce-page input.button.alt:hover, .et_button_no_icon.woocommerce #respond input#submit.alt:hover, .et_button_no_icon.woocommerce-page #respond input#submit.alt:hover, .et_button_no_icon.woocommerce #content input.button.alt:hover, .et_button_no_icon.woocommerce-page #content input.button.alt:hover, .et_button_no_icon.woocommerce a.button:hover, .et_button_no_icon.woocommerce-page a.button:hover, .et_button_no_icon.woocommerce button.button:hover, .et_button_no_icon.woocommerce-page button.button:hover, .et_button_no_icon.woocommerce input.button:hover, .et_button_no_icon.woocommerce-page input.button:hover, .et_button_no_icon.woocommerce #respond input#submit:hover, .et_button_no_icon.woocommerce-page #respond input#submit:hover, .et_button_no_icon.woocommerce #content input.button:hover, .et_button_no_icon.woocommerce-page #content input.button:hover, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce a.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page a.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce button.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page button.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #respond input#submit.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #respond input#submit.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #content input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #content input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce a.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page a.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce button.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page button.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #respond input#submit, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #respond input#submit, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #content input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #content input.button, .et_button_no_icon.et_button_left.woocommerce a.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page a.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce button.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page button.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce #respond input#submit.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page #respond input#submit.alt:hover, .et_button_no_icon.et_button_left.woocommerce #content input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page #content input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce a.button:hover, .et_button_no_icon.et_button_left.woocommerce-page a.button:hover, .et_button_no_icon.et_button_left.woocommerce button.button:hover, .et_button_no_icon.et_button_left.woocommerce-page button.button:hover, .et_button_no_icon.et_button_left.woocommerce input.button:hover, .et_button_no_icon.et_button_left.woocommerce-page input.button:hover, .et_button_no_icon.et_button_left.woocommerce #respond input#submit:hover, .et_button_no_icon.et_button_left.woocommerce-page #respond input#submit:hover, .et_button_no_icon.et_button_left.woocommerce #content input.button:hover, .et_button_no_icon.et_button_left.woocommerce-page #content input.button:hover, .woocommerce input.button, .woocommerce input.button:hover {
+		letter-spacing: 3px !important;
+	}
+}
+@media screen and (max-width : 600px) {
+	.et_button_no_icon .et_pb_button, .et_button_no_icon .et_pb_button:hover, .et_button_no_icon.et_button_icon_visible.et_button_left .et_pb_button, .et_button_no_icon.et_button_left .et_pb_button:hover, .et_button_no_icon.woocommerce a.button.alt, .et_button_no_icon.woocommerce-page a.button.alt, .et_button_no_icon.woocommerce button.button.alt, .et_button_no_icon.woocommerce-page button.button.alt, .et_button_no_icon.woocommerce input.button.alt, .et_button_no_icon.woocommerce-page input.button.alt, .et_button_no_icon.woocommerce #respond input#submit.alt, .et_button_no_icon.woocommerce-page #respond input#submit.alt, .et_button_no_icon.woocommerce #content input.button.alt, .et_button_no_icon.woocommerce-page #content input.button.alt, .et_button_no_icon.woocommerce a.button, .et_button_no_icon.woocommerce-page a.button, .et_button_no_icon.woocommerce button.button, .et_button_no_icon.woocommerce-page button.button, .et_button_no_icon.woocommerce input.button, .et_button_no_icon.woocommerce-page input.button, .et_button_no_icon.woocommerce #respond input#submit, .et_button_no_icon.woocommerce-page #respond input#submit, .et_button_no_icon.woocommerce #content input.button, .et_button_no_icon.woocommerce-page #content input.button, .et_button_no_icon.woocommerce a.button.alt:hover, .et_button_no_icon.woocommerce-page a.button.alt:hover, .et_button_no_icon.woocommerce button.button.alt:hover, .et_button_no_icon.woocommerce-page button.button.alt:hover, .et_button_no_icon.woocommerce input.button.alt:hover, .et_button_no_icon.woocommerce-page input.button.alt:hover, .et_button_no_icon.woocommerce #respond input#submit.alt:hover, .et_button_no_icon.woocommerce-page #respond input#submit.alt:hover, .et_button_no_icon.woocommerce #content input.button.alt:hover, .et_button_no_icon.woocommerce-page #content input.button.alt:hover, .et_button_no_icon.woocommerce a.button:hover, .et_button_no_icon.woocommerce-page a.button:hover, .et_button_no_icon.woocommerce button.button:hover, .et_button_no_icon.woocommerce-page button.button:hover, .et_button_no_icon.woocommerce input.button:hover, .et_button_no_icon.woocommerce-page input.button:hover, .et_button_no_icon.woocommerce #respond input#submit:hover, .et_button_no_icon.woocommerce-page #respond input#submit:hover, .et_button_no_icon.woocommerce #content input.button:hover, .et_button_no_icon.woocommerce-page #content input.button:hover, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce a.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page a.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce button.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page button.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #respond input#submit.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #respond input#submit.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #content input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #content input.button.alt, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce a.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page a.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce button.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page button.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #respond input#submit, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #respond input#submit, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce #content input.button, .et_button_no_icon.et_button_icon_visible.et_button_left.woocommerce-page #content input.button, .et_button_no_icon.et_button_left.woocommerce a.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page a.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce button.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page button.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce #respond input#submit.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page #respond input#submit.alt:hover, .et_button_no_icon.et_button_left.woocommerce #content input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce-page #content input.button.alt:hover, .et_button_no_icon.et_button_left.woocommerce a.button:hover, .et_button_no_icon.et_button_left.woocommerce-page a.button:hover, .et_button_no_icon.et_button_left.woocommerce button.button:hover, .et_button_no_icon.et_button_left.woocommerce-page button.button:hover, .et_button_no_icon.et_button_left.woocommerce input.button:hover, .et_button_no_icon.et_button_left.woocommerce-page input.button:hover, .et_button_no_icon.et_button_left.woocommerce #respond input#submit:hover, .et_button_no_icon.et_button_left.woocommerce-page #respond input#submit:hover, .et_button_no_icon.et_button_left.woocommerce #content input.button:hover, .et_button_no_icon.et_button_left.woocommerce-page #content input.button:hover, .woocommerce input.button, .woocommerce input.button:hover {
+		font-size: 20px !important;
+		padding: 5px 30px !important;
+	}
+}
+
+
+
+/* HEADER */
+#main-header {
+	background-color: rgba(35,35,35,0.9);
+}
+
+
+
+/* LOGO */
+.et-fixed-header #logo {
+  max-height: 70%;
+}
+
+
+
+/* NAVIGATION */
+.et_header_style_left #et-top-navigation, .et_header_style_split #et-top-navigation {
+	padding: 30px 0 0 0 !important;
+}
+.et-fixed-header #et-top-navigation {
+	padding: 10px 0 !important;
+}
+.et-fixed-header#main-header .nav li ul {
+	background-color: #fff !important;
+	box-shadow: 0 20px 40px rgba(100,100,100,.1);
+}
+.et-fixed-header#main-header .nav li ul a {
+    color: #232323 !important;
+}
+.nav li ul {
+	border-top: none;
+}
+#top-menu li li a {
+	padding: 10px 20px;
+	line-height: 1.2em;
+}
+#top-menu-nav > ul > li > a:hover, #main-header .nav li ul a:hover, .et-fixed-header #top-menu a:hover {
+	opacity: 1;
+	color: #de892e !important;
+}
+.nav ul li a:hover, .et_mobile_menu li a:hover {
+	background-color: transparent;
+}
+#top-menu li.freeEstimate a {
+	border: 2px solid rgba(255,255,255,.4);
+	padding: 13px 15px 15px !important;
+}
+#top-menu li.freeEstimate a:hover {
+	border: 2px solid #de892e;
+	color: #de892e;
+}
+@media screen and (max-width : 1200px) {
+	#top-menu li {
+		padding-right: 15px;
+	}
+	#top-menu li a {
+		font-size: 16px !important;
+	}
+}
+
+/* MOBILE MENU */
+.et_mobile_menu {
+	background-color: rgba(18,18,18,.95);
+	border-top: none;
+}
+.et_mobile_menu li {
+	text-align: center;
+}
+.et_mobile_menu li li {
+	padding-left: 0;
+}
+.et_mobile_menu .menu-item-has-children > a {
+	font-weight: 500;
+	font-size: 30px;
+}
+.et_mobile_menu li a {
+	color: #fff !important;
+	font-size: 20px;
+	font-weight: 100;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 15px 5%;
+}
+.et_mobile_menu li.freeEstimate a {
+	color: #de892e !important;
+	font-weight: 500;
+}
+
+
+
+/* HOME */
+.playBtn a {
+	display: inline-block;
+	padding: 45px;
+	background-color: rgba(226, 136, 42,.8);
+	border-radius: 999px;
+	-webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.playBtn a:hover {
+	background-color: rgba(226, 136, 42,.6);
+}
+.playBtn a img {
+	width: 100px;
+	height: auto;
+}
+.playBtn a {
+  padding-top: 40px;
+  padding-bottom: 40px !important;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+.playBtn a:hover {
+  padding-top: 50px;
+  padding-bottom: 50px !important;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+
+
+/* SERVICES */
+.servicesModule h2 {
+	font-size: 60px;
+	font-weight: 100;
+}
+@media screen and (max-width : 600px) {
+	.servicesModule h2 {
+		font-size: 40px;
+	}
+}
+
+
+
+/* GET STARTED */
+.getStarted h2 {
+	font-size: 58px;
+	font-weight: 100;
+}
+@media screen and (max-width : 980px) {
+	.getStarted h2 {
+		font-size: 42px;
+	}
+}
+
+
+
+/* TESTIMONIALS */
+.testimonials .et_pb_slide {
+	box-shadow: none !important;
+}
+.testimonials .et_pb_slide_description {
+	text-shadow: none !important;
+}
+.testimonials img {
+	width: 100px;
+	height: 100px;
+  margin: 20px auto;
+}
+.testimonials h3 {
+	font-weight: 400 !important;
+	color: #98694d !important;
+	letter-spacing: 1px !important;
+}
+.testimonials h4 {
+	text-transform: none !important;
+	font-style: italic;
+	font-weight: 100;
+	color: #232323 !important;
+	letter-spacing: 0px !important;
+	font-size: 20px !important;
+}
+
+
+
+/* SUBSCRIBE */
+.subscribe h3 {
+	font-size: 36px;
+	font-weight: 400 !important;
+	margin-top: 10px;
+}
+@media screen and (max-width : 1100px) {
+	.subscribe h3 {
+		font-size: 30px;
+	}
+}
+
+
+
+/* DIVI FORM STYLES */
+.et_pb_contact p input, .et_pb_contact p textarea {
+  font-family: 'Oswald';
+  font-weight: 100;
+  font-size: 24px;
+  color: #848484;
+  border: 1px solid #dfdfdf;
+  background-color: #f9f9f9;
+}
+.et_pb_contact p input.et_pb_contact_captcha {
+  font-size: 21px;
+  position: relative;
+  top: -1px;
+  text-align: center;
+}
+@media screen and (max-width : 600px) {
+	.et_pb_contact p input.et_pb_contact_captcha {
+    font-size: 18px;
+    top: 0px;
+    padding: 11px 11px 9px;
+  }
+}
+
+
+
+/* GRAVITY FORMS STYLES */
+body .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), body .gform_wrapper textarea.textarea, body div.form_saved_message div.form_saved_message_emailform form input[type=text] {
+  font-family: 'Oswald' !important;
+  font-weight: 100 !important;
+  font-size: 24px !important;
+  color: #848484 !important;
+  border: 1px solid #dfdfdf !important;
+  background-color: #f9f9f9 !important;
+}
+.gform_wrapper {
+  margin: 0 !important;
+}
+.gform_wrapper ul li.gfield, .gform_wrapper li.hidden_label input {
+  margin-top: 0 !important;
+}
+.gform_wrapper .top_label div.ginput_container {
+    margin-top: 16px !important;
+}
+.gform_wrapper label {
+  display: none !important;
+}
+.gform_wrapper .gform_footer {
+  padding: 0 !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+.gform_wrapper .gform_footer input.button {
+  color: #fff !important;
+  font-weight: 100 !important;
+  background-color: #de892e !important;
+  border-color: #de892e !important;
+}
+.gform_wrapper .gform_footer input.button:hover {
+  color: #fff !important;
+  background-color: #98694d !important;
+  border-color: #98694d !important;
+}
+.gform_confirmation_message {
+  font-family: 'Oswald' !important;
+  font-weight: 100 !important;
+  font-size: 24px !important;
+  margin-top: 15px !important;
+}
+.ginput_container_address input {
+	margin-bottom: 15px;
+}
+@media screen and (max-width : 980px) {
+  body .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), body .gform_wrapper textarea.textarea, body div.form_saved_message div.form_saved_message_emailform form input[type=text] {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width : 640px) {
+  .gform_wrapper li.field_sublabel_below .ginput_complex {
+    margin-top: 8px !important;
+  }
+  .gform_wrapper .gform_footer input.button {
+    margin-top: 0 !important;
+  }
+	.gform_wrapper input.large, .gform_wrapper input.medium, .gform_wrapper input.small, .gform_wrapper select.large, .gform_wrapper select.medium, .gform_wrapper select.small, .gform_wrapper .ginput_complex .ginput_left input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image]):not([type=file]), .gform_wrapper .ginput_complex .ginput_right input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image]):not([type=file]), .gform_wrapper .ginput_complex .ginput_right select, .gform_wrapper .ginput_complex input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image]):not([type=file]), .gform_wrapper .ginput_complex select, textarea {
+    width: 97% !important;
+    margin: 0 !important;
+  }
+}
+@media screen and (max-width : 500px) {
+	.gform_wrapper input.large, .gform_wrapper input.medium, .gform_wrapper input.small, .gform_wrapper select.large, .gform_wrapper select.medium, .gform_wrapper select.small, .gform_wrapper .ginput_complex .ginput_left input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image]):not([type=file]), .gform_wrapper .ginput_complex .ginput_right input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image]):not([type=file]), .gform_wrapper .ginput_complex .ginput_right select, .gform_wrapper .ginput_complex input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=image]):not([type=file]), .gform_wrapper .ginput_complex select, textarea {
+    width: 100% !important;
+  }
+}
+
+
+
+/* FREE ESTIMATE */
+@media screen and (max-width : 600px) {
+	a.et_pb_button.freeEstimate {
+		height: 80px !important;
+	  font-size: 24px !important;
+	  padding-top: 21px !important;
+	}
+}
+@media screen and (max-width : 330px) {
+	a.et_pb_button.freeEstimate {
+	  font-size: 20px !important;
+	  padding-top: 25px !important;
+	}
+}
+
+
+
+/* FOOTER BOTTOM */
+#footer-bottom {
+	background-color: #232323;
+	font-family: 'Oswald';
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1px;
+	padding: 20px 0;
+}
+#footer-info {
+	float: none;
+	line-height: 1.1em;
+	text-align: center;
+	padding-bottom: 0;
+	color: #ccc;
+}
+#footer-info a {
+	color: #ccc;
+	font-weight: 400;
+}
+#footer-info p {
+	padding-bottom: 4px;
+}
+@media screen and (max-width : 600px) {
+	#footer-bottom {
+		font-size: 12px;
+		letter-spacing: 2px;
+	}
+}
+.et_main_title .et_project_categories {
+  display: block !important;
+}
+
+
+
+/* BLOG */
+.et_pb_blog_grid .et_pb_post {
+  padding: 0;
+  border: none;
+  margin-bottom: 20px !important;
+}
+.et_pb_blog_grid .et_pb_image_container {
+  margin: 0;
+}
+.et_pb_post .post-meta {
+  font-style: italic;
+}
+.et_pb_posts a.more-link {
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  color: #fff;
+  background-color: #de892e;
+  padding: 20px 20px 20px 20px;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  display: -webkit-inline-box;
+}
+.et_pb_posts a.more-link:hover {
+	background-color: #98694d;
+}
+.more-link {
+  display: inline-block;
+  margin-top: 15px;
+  font-family: 'Oswald';
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  background: #de892e;
+	padding: 6px 24px 8px;
+}
+.more-link:hover {
+  color: #fff;
+  background: #98694d;
+}
+
+
+
+/* SIDEBAR */
+#main-content .container:before {
+  background-color: transparent;
+}
+.widget_search input#s, .widget_search input#searchsubmit {
+  border-radius: 0;
+  border: none;
+}
+.widget_search input#s {
+  background: #efefef;
+}
+.widget_search input#searchsubmit {
+  font-family: 'Oswald';
+  font-size: 14px;
+  font-weight: 100;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 0;
+  background: #de892e;
+  border-left: 1px solid #fff;
+}
+.widget_search input#searchsubmit:hover {
+  background: #98694d;
+}
+#sidebar h4.widgettitle {
+  font-weight: 100;
+  color: #98694d !important;
+  letter-spacing: 3px;
+  font-size: 24px;
+}
+.et_pb_widget li a:hover {
+  color: #000;
+}
+#sidebar .et_pb_button {
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+	padding: 8px 24px !important;
+}
+
+
+
+/* ----------- END CHILD THEME CUSTOM CSS --------------------------- */
+
+.nav li ul {
+	width: 320px!important;
+}
+
+#top-menu li li a {
+	width: 100%!important;
+	padding: 6px 20px;
+}
+
+/* ----------- PUT CUSTOM CSS BELOW THIS LINE --------------------------- */
