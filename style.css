@@ -629,3 +629,152 @@ body .gform_wrapper input:not([type=radio]):not([type=checkbox]):not([type=submi
 }
 
 /* ----------- PUT CUSTOM CSS BELOW THIS LINE --------------------------- */
+
+
+/* New added Style */
+.menu-image-title, #main-header {
+	color: #bb612b !important;
+}
+#et-secondary-menu .menu-image-title {
+	color: white !important;
+}
+.et_pb_button, .et_pb_button:hover {
+	color: #bb612b !important;
+}
+#main-header .nav li ul {
+	background: #eeecef !important;
+	border: 2px solid #4d585a;
+}
+.et_pb_text_2 {
+	padding-top: 0 !important;
+}
+.sub-menu .menu-image-title {
+	font-size: 18px !important;
+}
+#et-main-area, #main-content, .et_pb_section {
+	background: none !important;
+}
+h2.et_pb_module_header {
+	color: white !important;
+	font-weight: bold !important;
+}
+.sub-menu .menu-image-title:hover {
+	color: #4d585a !important;
+}
+#et_top_search {
+	display: none !important;
+}
+.et_portfolio_image img {
+	border: 2px solid #4d585a;
+}
+.container article h1 {
+    color: white !important;
+}
+h1 span strong {
+	color: white !important;
+}
+.dropdown-content1 a, .dropdown-content2 a, 
+.dropdown-content3 a, .dropdown-content4 a, 
+.dropdown-content5 a, .dropdown-content7 a {
+	color: #bb612b !important;
+}
+.dropdown-content1 a:hover, .dropdown-content2 a:hover, 
+.dropdown-content3 a:hover, .dropdown-content4 a:hover, 
+.dropdown-content5 a:hover, .dropdown-content7 a:hover {
+	color: #4d585a !important;
+}
+.et_pb_text_inner p, label {
+	color: white !important;
+}
+.iphorm-edit-form-wrap a {
+	color: white;
+}
+.size-1of3 article {
+	border: 2px solid #4d585a !important;
+	padding: 10px !important;
+}
+.size-1of3 article h2 {
+	color: #000 !important;
+}
+.size-1of3 article p {
+	text-align: justify !important;
+	color: #000 !important;
+}
+.size-1of3 article .post-content{
+	text-align: center !important;
+}
+.wp-pagenavi a, .wp-pagenavi span {
+	color: white !important;
+}
+.wp-pagenavi span.current, .wp-pagenavi a:hover {
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 19px !important;
+}
+.wp-pagenavi .nextpostslink, .wp-pagenavi .previouspostslink {
+	color: white !important;
+}
+.et_pb_blurb:hover {
+	background: none !important;
+    color: white !important;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal !important;
+}
+#top-menu li:last-child img {
+	display: none !important;
+}
+.project_category-management-team {
+	text-align: center !important;
+}
+.et_pb_blog_grid article h2, .et_pb_blog_grid article p {
+	color: #4d585a !important; 
+}
+.et_pb_blog_grid article p {
+	text-align: justify !important;
+}
+.et_pb_blog_grid article.et_pb_post {
+	border: 2px solid #4d585a !important;
+}
+@media (max-width: 600px) {
+	.et_pb_divider_0 {
+    	display: none;
+	}
+	.et_pb_text_inner h1 span {
+		color: white !important;
+	}
+	.size-1of1 article {
+		padding: 10px !important;
+	}
+	.size-1of1 article p {
+		text-align: justify !important;
+		color: #000 !important;
+	}
+	.size-1of1 article .post-content {
+		text-align: center;
+	}
+	#et-main-area {
+		padding-top: 70px !important;
+	}
+	.container {
+		width: 100%;
+	}
+	#left-area article h1 {
+		padding-left: 20px;
+	}
+	.size-1of1 article h2, .size-1of1 article p {
+		color: #4d585a !important;
+	}
+	.et_pb_text_inner {
+		padding: 10px;
+	}
+	.et_pb_blog_grid .portfolio.odd {
+		margin-left: 0 !important;
+	}
+	.et_pb_blog_grid article.et_pb_post {
+		border: none !important;
+	}
+	.et_pb_blog_grid article.et_pb_post .post-content {
+		text-align: center !important;
+	}
+}
